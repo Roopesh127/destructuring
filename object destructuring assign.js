@@ -9,12 +9,12 @@ const order = {
     price: 145000,
     condition: "New",
   };
-  const { brandDetails, id, productName, price, condition } = order;
-  const { brandName, origin, assembledIn } = brandDetails;
+  const { id, productName, price, condition,brandDetails } = order;
+  const {origin, brandName, assembledIn } = brandDetails;
 
-  var generateMessage = (data) => {
+  var generateMessage = (destructure) => {
     return `Hello Team. I have ordered a new ${productName} which cost me ${price}. Let me know when will i get it?`;
   };
 
-  console.log(generateMessage(order));
+  console.log(generateMessage(destructure));
   
